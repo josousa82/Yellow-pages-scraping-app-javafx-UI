@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <?import javafx.scene.control.Button?>
+    <?import javafx.scene.control.CheckBox?>
+    <?import javafx.scene.control.Label?>
+    <?import javafx.scene.control.Menu?>
+    <?import javafx.scene.control.MenuBar?>
+    <?import javafx.scene.control.MenuItem?>
+    <?import javafx.scene.control.ScrollPane?>
+    <?import javafx.scene.control.Slider?>
+    <?import javafx.scene.control.SplitPane?>
+    <?import javafx.scene.control.TableColumn?>
+    <?import javafx.scene.control.TableView?>
+    <?import javafx.scene.control.TextField?>
+    <?import javafx.scene.layout.AnchorPane?>
+    <?import javafx.scene.layout.VBox?>
+    <?import javafx.scene.text.Font?>
+
+    <VBox id="root" fx:id= "root" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lastjavafxtest.SecondaryController">
+        <children>
+            <MenuBar id="topMenuBar" fx:id="topMenuBar" VBox.vgrow="NEVER">
+                <menus>
+                    <Menu id="fileTopMenu" mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem id="fileNewSearchMenu" mnemonicParsing="false" text="New Search" />
+                            <MenuItem id="fileSaveMenu" mnemonicParsing="false" text="Save"/>
+                            <MenuItem id="fileSaveAsMenu" mnemonicParsing="false" text="Save as.." />
+                            <MenuItem id="fileCloseMenu" mnemonicParsing="false" text="Close" onAction="#handleCloseAction"/>
+                        </items>
+                    </Menu>
+                    <Menu id="editTopMenu" mnemonicParsing="false" text="Edit">
+                        <items>
+                            <MenuItem id="editUndoMenu" mnemonicParsing="false" text="Undo" />
+                            <MenuItem id="editRedoMenu" mnemonicParsing="false" text="Redo" />
+                            <MenuItem id="editDeleteMenu" mnemonicParsing="false" text="Delete" />
+                        </items>
+                    </Menu>
+                    <Menu id="helpTopMenu" mnemonicParsing="false" text="Help">
+                        <items>
+                            <MenuItem id="gettingStartedHelpMenu" mnemonicParsing="false" text="Getting Started" />
+                            <MenuItem id="aboutHelpMenu" mnemonicParsing="false" text="About" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <SplitPane id="splitPane" dividerPositions="0.2505567928730512" prefHeight="600.0" prefWidth="600.0">
+                <items>
+                    <AnchorPane id="leftSplitPaneAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="499.0" prefWidth="445.0">
+                        <children>
+                            <Label id="labelSearch" layoutX="8.0" layoutY="3.0" text="Pesquisa" textAlignment="CENTER" textFill="#9f9f9f">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <Label id="searchTextBoxLAbel" layoutX="17.0" layoutY="128.0" text="Localidade" textAlignment="CENTER" textFill="#0d0d0d">
+                                <font>
+                                    <Font name="System Bold" size="15.0" />
+                                </font>
+                            </Label>
+                            <TextField id="searchTextBox"  fx:id="searchTextBox"  onAction="#inputSearchText" layoutX="14.0" layoutY="81.0" prefHeight="29.0" prefWidth="191.0"/>
+                            <TextField id="nameTextBox" fx:id="nameTextBox" onAction="#inputNameText" layoutX="14.0" layoutY="151.0" prefHeight="29.0" prefWidth="191.0"/>
+                            <Label id="nameTextBoxLabel" layoutX="16.0" layoutY="54.0" text="Nome" textAlignment="CENTER">
+                                <font>
+                                    <Font name="System Bold" size="15.0" />
+                                </font>
+                            </Label>
+                            <CheckBox id="whitePageCheckBox" layoutX="16.0" layoutY="210.0" mnemonicParsing="false" text="Paginas Brancas" />
+                            <CheckBox id=" yellowPageCheckBox" layoutX="15.0" layoutY="253.0" mnemonicParsing="false" text="Paginas Amarelas" />
+                            <Label id="timeSliderLabel" layoutX="37.0" layoutY="316.0" text="Intervalo Pesquisa" textAlignment="CENTER">
+                                <font>
+                                    <Font name="System Bold" size="15.0" />
+                                </font>
+                            </Label>
+                            <Slider id="timeSlider" accessibleRole="INCREMENT_BUTTON" layoutX="33.0" layoutY="349.0" />
+                            <Button id="searchButton" fx:id="searchButton" layoutX="111.0" layoutY="395.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" onAction="#submitSearchButton" text="Pesquisa">
+                                <font>
+                                    <Font size="15.0" />
+                                </font>
+                            </Button>
+                            <Label id="resultsNumberLabel" layoutX="30.0" layoutY="465.0" text="Numero Resultados" />
+                            <Label id="resultsNumber" alignment="CENTER" blendMode="LIGHTEN" contentDisplay="TOP" layoutX="30.0" layoutY="489.0" prefHeight="23.0" prefWidth="121.0" text="Label" textAlignment="CENTER" />
+                        </children>
+                    </AnchorPane>
+                    <ScrollPane id="scrollPane" prefHeight="567.0" prefWidth="690.0">
+                        <content>
+                            <AnchorPane id="rightSplitPaneAnchorPane">
+                                <children>
+                                    <Label id="resultsLabel" layoutX="10.0" layoutY="1.0" text="Resultados" textAlignment="CENTER" textFill="#9f9f9f">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <TableView id="resultsView" fx:id="resultsView" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="540.0" prefWidth="630.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+                                        <columns>
+                                            <TableColumn id="name" editable="false" prefWidth="194.0" text="Nome" />
+                                            <TableColumn id="phone" editable="false" prefWidth="82.0" text="Telefone" />
+                                            <TableColumn id="city" editable="false" prefWidth="89.0" text="Cidade" />
+                                            <TableColumn id="localZip" editable="false" prefWidth="59.0" text="CP" />
+                                            <TableColumn id="streetZip" editable="false" prefWidth="60.0" text="CP Rua" />
+                                            <TableColumn id="address" editable="false" prefWidth="210.0" text="Morada" />
+                                        </columns>
+                                    </TableView>
+                                </children>
+                            </AnchorPane>
+                        </content>
+                    </ScrollPane>
+                </items>
+            </SplitPane>
+        </children>
+    </VBox>
