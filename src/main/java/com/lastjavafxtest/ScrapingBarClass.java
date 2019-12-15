@@ -2,6 +2,8 @@ package com.lastjavafxtest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.ArrayList;
 
@@ -28,7 +30,9 @@ public class ScrapingBarClass implements Runnable {
     public void run() {
 
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
-        webDriverChrome = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments();
+        webDriverChrome = new ChromeDriver(chromeOptions);
 
         try {
             webDriverChrome.get("http://www.pbi.pai.pt/q/name/where/" + this.name + "/who/"
@@ -40,7 +44,6 @@ public class ScrapingBarClass implements Runnable {
             System.out.println("task complete");
 
             webDriverChrome.close();
-
 
         } catch (InterruptedException e) {
             e.printStackTrace();
