@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14477537-1a2a-4c08-a76e-6908b08ed327" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lastjavafxtest/ScrapingBarClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lastjavafxtest/ScrapingBarClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +157,7 @@
       <workItem from="1575560608451" duration="11350000" />
       <workItem from="1575679383269" duration="598000" />
       <workItem from="1575990291238" duration="1740000" />
+      <workItem from="1576381760481" duration="662000" />
     </task>
     <servers />
   </component>
@@ -183,30 +178,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="561" y="334" key="Github.ShareDialog" timestamp="1576381890265">
+    <state x="561" y="334" width="621" height="199" key="Github.ShareDialog" timestamp="1576382335393">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="561" y="334" key="Github.ShareDialog/0.23.1440.822@0.23.1440.822" timestamp="1576381890265" />
-    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1576381979244">
+    <state x="561" y="334" width="621" height="199" key="Github.ShareDialog/0.23.1440.822@0.23.1440.822" timestamp="1576382335393" />
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1576382025472">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1440.822/-3840.-34.1920.1080/-1920.0.1920.1080@-3840.-34.1920.1080" timestamp="1575992515441" />
-    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1576381979244" />
-    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1576381979243">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1576382025472" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1576382025471">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1440.822/-3840.-34.1920.1080/-1920.0.1920.1080@-3840.-34.1920.1080" timestamp="1575992515440" />
-    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1576381979243" />
-    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1576381979242">
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1576382025471" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1576382025471">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1440.822/-3840.-34.1920.1080/-1920.0.1920.1080@-3840.-34.1920.1080" timestamp="1575992515440" />
-    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1576381979242" />
-    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1576381979243">
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1576382025471" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1576382025472">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1440.822/-3840.-34.1920.1080/-1920.0.1920.1080@-3840.-34.1920.1080" timestamp="1575992515441" />
-    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1576381979243" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1576382025472" />
     <state x="-3486" y="210" key="new project wizard" timestamp="1575991396331">
       <screen x="-3840" y="-34" width="1920" height="1080" />
     </state>
